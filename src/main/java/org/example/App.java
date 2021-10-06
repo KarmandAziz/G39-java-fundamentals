@@ -56,7 +56,7 @@ public class App {
 
     }
 
-    public static void weeklyAssignment3b(){
+    public static void weeklyAssignment3b(){  //Tryng to figure out assignment 3's meaning. Calculator?
 
     }
       // examples and exercises
