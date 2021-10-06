@@ -4,11 +4,10 @@ package org.example;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class App
-{
+public class App {
     public static void main(String[] args) { // <- Start of main method
 
-        weeklyAssignment2();
+
 
 
 
@@ -28,23 +27,15 @@ public class App
         System.out.println("Enter a year ");
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
-        boolean leap = true;
 
-        if (year % 4 == 0) {
-            if (year % 400 == 0)
-                leap = true;
-                System.out.println("This specified year is a leap year!");
-            } else {
-            if (year % 100 != 0) {
-                leap = false;
-                System.out.println("The specified year is not a leap year!");
-            }
+        if (year % 4 == 0 || year % 400 == 0) {
+            System.out.println("This specified year is a leap year!");
+        } else {
+            System.out.println("The specified year is not a leap year!");
         }
-
-
     }
 
-    public static void weeklyAssignment3(){
+    public static void weeklyAssignment3a(){
         int num1 = 45;
         int num2 = 11;
         int result1 = num1 + num2;
@@ -59,6 +50,10 @@ public class App
         int result4 = num7 - num8;
 
         System.out.println("45+11="+ result1 + "\n" + "12*4="+ result2 + "\n" +"24/6="+ result3 + "\n" +"55-12="+ result4);
+
+    }
+
+    public static void weeklyAssignment3b(){
 
     }
 
