@@ -8,6 +8,8 @@ public class App
 {
     public static void main(String[] args) { // <- Start of main method
 
+        weeklyAssignment2();
+
 
 
 
@@ -21,16 +23,25 @@ public class App
         System.out.println(name);
     }
 
-    public static void weeklyAssignment2(){
-        int year;
-        System.out.println("Enter a Year ");
-        Scanner sc = new Scanner(System.in);
-        year = sc.nextInt();
+    public static void weeklyAssignment2() {
 
-        if (((year % 4 == 0) && (year % 100!= 0)) && (year%400 == 0))
-            System.out.println("Specified year is a leap year");
-        else
-            System.out.println("Specified year is not a leap year");
+        System.out.println("Enter a year ");
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        boolean leap = true;
+
+        if (year % 4 == 0) {
+            if (year % 400 == 0)
+                leap = true;
+                System.out.println("This specified year is a leap year!");
+            } else {
+            if (year % 100 != 0) {
+                leap = false;
+                System.out.println("The specified year is not a leap year!");
+            }
+        }
+
+
     }
 
     public static void weeklyAssignment3(){
