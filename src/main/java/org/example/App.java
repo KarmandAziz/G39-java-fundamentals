@@ -7,7 +7,9 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) { // <- Start of main method
 
-        weeklyAssignment3();
+        weeklyAssignment3b();
+
+
 
 
 
@@ -42,8 +44,7 @@ public class App {
         }
     }
 
-    public static void weeklyAssignment3(){
-
+    public static void weeklyAssignment3a(){
 
         int num1 = 25;
         int num2 = 11;
@@ -66,12 +67,37 @@ public class App {
         System.out.println(num1 + "-" + num2 + " = " + result);
 
 
+    }  // Was unsure if exercise 3 wanted user input so i tried doing both.
+    public static void weeklyAssignment3b() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Input number: ");
+        int num1 = in.nextInt();
+        System.out.println("Input number: ");
+        int num2 = in.nextInt();
+
+        System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+        System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+        System.out.println(num1 + " / " + num2 + " = " + (num1 % num2));
+        System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+
     }
 
     public static void weeklyAssignment4() {
 
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int num1 = in.nextInt();
+        System.out.print("Input number: ");
+        int num2 = in.nextInt();
+        System.out.print("Input number: ");
+        int num3 = in.nextInt();
 
+        System.out.println("The average of the specified numbers: " + (num1 + num2 + num3) / 3);
     }
+
+
+
+
       // examples and exercises
 
     public static void selectionExample() {
