@@ -7,7 +7,11 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) { // <- Start of main method
 
-        calculatorExample();
+        weeklyAssignment3();
+
+
+
+
 
 
 
@@ -38,29 +42,37 @@ public class App {
         }
     }
 
-    public static void weeklyAssignment3a(){
-        int num1 = 26;
-        int num2 = 11;
-        int result1 = num1 + num2;
-        int num3 = 12;
-        int num4 = 4;
-        int result2 = num3 * num4;
-        int num5 = 24;
-        int num6 = 6;
-        int result3 = num5 / num6;
-        int num7 = 55;
-        int num8 = 12;
-        int result4 = num7 - num8;
+    public static void weeklyAssignment3(){
 
-        System.out.println("45+11="+ result1 + "\n" + "12*4="+ result2 + "\n" +"24/6="+ result3 + "\n" +"55-12="+ result4);
+
+        int num1 = 25;
+        int num2 = 11;
+        int result = num1 + num2;
+        System.out.println(num1 + "+" + num2 + " = " + result);
+
+        num1 = 15;
+        num2 = 7;
+        result = num1 * num2;
+        System.out.println(num1 + "*" + num2 + " = " + result);
+
+        num1 = 33;
+        num2 = 10;
+        result = num1 / num2;
+        System.out.println(num1 + "/" + num2 + " = " + result);
+
+        num1 = 65;
+        num2 = 27;
+        result = num1 - num2;
+        System.out.println(num1 + "-" + num2 + " = " + result);
+
 
     }
 
-    public static void weeklyAssignment3b(){  //Tryng to figure out assignment 3's meaning. Calculator?
+    public static void weeklyAssignment4() {
+
 
     }
       // examples and exercises
-
 
     public static void selectionExample() {
 
