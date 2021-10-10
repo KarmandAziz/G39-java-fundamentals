@@ -7,13 +7,11 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) { // <- Start of main method
 
-        weeklyAssignment3b();
 
+        Scanner scanner = new Scanner (System.in);
+        boolean correctGuess = true;
 
-
-
-
-
+        int
 
 
 
@@ -26,15 +24,15 @@ public class App {
 
 
     //  Weekly assignments below
-    public static void weeklyAssignment1() {
+    public static void weeklyExercise1() {
         String name = "Hello\nKarmand";
         System.out.println(name);
     }
 
-    public static void weeklyAssignment2() {
+    public static void weeklyExercise2() {
 
-        System.out.println("Enter a year ");
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a year ");
         int year = sc.nextInt();
 
         if (year % 4 == 0 || year % 400 == 0) {
@@ -42,33 +40,53 @@ public class App {
         } else {
             System.out.println(year + " is not a leap year!");
         }
-    }
+    }  // is 2021 a leapYear?
 
-    public static void weeklyAssignment3a(){
+    public static void weeklyExercise3(){
 
         int num1 = 25;
         int num2 = 11;
         int result = num1 + num2;
-        System.out.println(num1 + "+" + num2 + " = " + result);
+        System.out.println(num1 + " + " + num2 + " = " + result);
 
         num1 = 15;
         num2 = 7;
         result = num1 * num2;
-        System.out.println(num1 + "*" + num2 + " = " + result);
+        System.out.println(num1 + " * " + num2 + " = " + result);
 
         num1 = 33;
         num2 = 10;
         result = num1 / num2;
-        System.out.println(num1 + "/" + num2 + " = " + result);
+        System.out.println(num1 + " / " + num2 + " = " + result);
 
         num1 = 65;
         num2 = 27;
         result = num1 - num2;
-        System.out.println(num1 + "-" + num2 + " = " + result);
+        System.out.println(num1 + " - " + num2 + " = " + result);
+    }  // print add/sub/multi/div of two or more numbers.
 
+    public static void weeklyExercise4() {
 
-    }  // Was unsure if exercise 3 wanted user input so i tried doing both.
-    public static void weeklyAssignment3b() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int num1 = in.nextInt();
+        System.out.print("Input number: ");
+        int num2 = in.nextInt();
+        System.out.print("Input number: ");
+        int num3 = in.nextInt();
+
+        System.out.println("The average of the specified numbers: " + (num1 + num2 + num3) / 3);
+    }  // Avg of 3 calc
+
+    public static void weeklyExercise5() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter name ");
+        String name = in.nextLine();
+        String sentence = "Hello" + " " + name;
+        System.out.println(sentence);
+    }  // ''Hello Username''
+
+    public static void weeklyExercise6() {
         Scanner in = new Scanner(System.in);
         System.out.println("Input number: ");
         int num1 = in.nextInt();
@@ -80,26 +98,28 @@ public class App {
         System.out.println(num1 + " / " + num2 + " = " + (num1 % num2));
         System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
 
-    }
+    } // prints userInput calc results
 
-    public static void weeklyAssignment4() {
+    public static void weeklyExercise7() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input seconds ");
+        int inputSeconds = scanner.nextInt();
+        int second = inputSeconds % 60;
+        int minute = inputSeconds / 60;
+        int hour = minute / 60;
+        minute = minute % 60;
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input number: ");
-        int num1 = in.nextInt();
-        System.out.print("Input number: ");
-        int num2 = in.nextInt();
-        System.out.print("Input number: ");
-        int num3 = in.nextInt();
+        System.out.println(hour + ":" + minute + ":" + second);
+    } // converts seconds into hours:minute:second
 
-        System.out.println("The average of the specified numbers: " + (num1 + num2 + num3) / 3);
-    }
+
+
+
 
 
 
 
       // examples and exercises
-
     public static void selectionExample() {
 
         System.out.println("Enter your age");
