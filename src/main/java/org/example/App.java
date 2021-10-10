@@ -5,13 +5,26 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
+
+    public static final String INTRO = "Welcome to the guessing game! If you guess right, Erik will let you pass the JAVA course.";
+
     public static void main(String[] args) { // <- Start of main method
 
+        boolean running = true;
 
-        Scanner scanner = new Scanner (System.in);
-        boolean correctGuess = true;
+        do{
+            String answer = InputUtil.stringFromUser(INTRO);
+            switch (answer){
+                GuessingGame.play();
+            }
+            running = false;
 
-        int
+        }while(running);
+
+
+
+
+
 
 
 
@@ -110,7 +123,7 @@ public class App {
         minute = minute % 60;
 
         System.out.println(hour + ":" + minute + ":" + second);
-    } // converts seconds into hours:minute:second
+    } // convert seconds into hours:minute:second
 
 
 
