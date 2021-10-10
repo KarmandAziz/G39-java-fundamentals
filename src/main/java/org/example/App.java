@@ -6,20 +6,28 @@ import java.util.Scanner;
 
 public class App {
 
-    public static final String INTRO = "Welcome to the guessing game! If you guess right, Erik will let you pass the JAVA course.";
+    public static final String INTRO = "Welcome to the guessing game!\nGuess a number between 1-500\nPress S to start!\nPress Q to quit!";
+    public static final String GOOD_BYE = "Thanks for playing! Goodbye";
 
     public static void main(String[] args) { // <- Start of main method
 
-        boolean running = true;
-
+        boolean running = false;                     //Exercise 8 guessing game
         do{
             String answer = InputUtil.stringFromUser(INTRO);
             switch (answer){
-                GuessingGame.play();
+                case "S":
+                case "s":
+                    GuessingGame.play();
+                    break;
+                case "Q":
+                case "q":
+                    running = true;
+                    break;
+                default:
+                    System.out.println("Unrecognized input:" +"''" + answer + "''");
             }
-            running = false;
-
         }while(running);
+        System.out.println(GOOD_BYE);
 
 
 
